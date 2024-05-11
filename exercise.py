@@ -1,6 +1,8 @@
 import turtle
 t = turtle.Turtle()
 
+t.pencolor("blue")
+
 for i in range(4):
     t.forward(100)
     t.right(90)
@@ -31,6 +33,8 @@ t.fd(200)
 t.pu()
 t.goto(-50,300)
 t.pendown()
+
+t.pencolor("red")
 
 t.fillcolor("red")
 t.begin_fill()
