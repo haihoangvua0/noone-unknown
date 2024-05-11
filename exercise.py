@@ -1,44 +1,40 @@
 import turtle
-v = turtle.Turtle()
-
-#chuaanr bij
-turtle.fillcolor ("blue")
-turtle.begin_fill()
+t = turtle.Turtle()
 
 for i in range(4):
-    v.forward(100)
-    v.right(90)
+    t.forward(100)
+    t.right(90)
 
-v.left(60)
-for i in range(3) :
-    v.forward(100)
-    v.right(120)
+#triagle
+angle1 = 120
+for i in range(3):
+    t.fd(100)
+    t.lt(angle1)
 
-v.forward(100)
-v.right(60)
-v.forward(200)
-v.right(60)
-v.forward(100)
-v.right(120)
+t.penup()
+t.left(60)
+t.fd(100)
+t.rt(30)
+t.pd()
+t.fd(200)
+t.rt(90)
+t.fd(100)
+t.rt(90)
+t.fd(200)
+t.pu()
+t.back(200)
+t.lt(60)
+t.pd()
+t.fd(100)
+t.rt(60)
+t.fd(200)
+t.pu()
+t.goto(-50,300)
+t.pendown()
 
-for i in range(2):
-    v.forward(200)
-    v.lt(90)
-    v.forward(100)
-    v.left(90)
-v.fd(300)
-turtle.end_fill()
-
-
-#laanf hai
-turtle.Turtle().goto(-40.00, 220.00)
-turtle.fillcolor ("red")
-turtle.begin_fill()
-
-#chayj mawtj troiwf
-
-turtle.circle(50)
-turtle.end_fill()
-
+t.fillcolor("red")
+t.begin_fill()
+t.circle(100)
+t.end_fill()
 
 turtle.done()
